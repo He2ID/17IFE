@@ -1,4 +1,4 @@
-#小微学院任务四  
+#小薇学院任务四  
 
 *   原任务居中在线预览：https://He2ID.github.io/17IFE/task_1_4/task1_4.HTML
 *   【绝对定位】居中在线预览：https://He2ID.github.io/17IFE/task_1_4/task1_4_1.HTML
@@ -30,8 +30,8 @@ with=height=border-radius  
     transform: translate(-50%,-50%);<br>
     -webkit-transform: translate(-50%,-50%);<br> 
     -ms-transform: translate(-50%,-50%);<br>
-    }<br>  
-####3.相对定位
+    }<br>  
+####3.相对定位  
 *   当c元素设置为position：relative top:30%百分比时，一定考察父元素高度是否确定。
 *   父元素无论是position：relative 还是 absolute 子元素设置position：absolute 均可使得子元素左上角相对父元素边沿定位。
 *   top:50%+20px是行不通的。
