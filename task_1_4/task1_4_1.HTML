@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>任务四：定位和居中问题_【绝对定位】居中</title>
+    <style type="text/css">
+    .center{
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;        
+        left: 0;
+        bottom: 0;/*绝对定位居中*/
+        width: 300px;
+        height: 30%;/*必须设置，否则占满高/宽*/
+        padding:50px; 
+        background-color: #ccc;
+        overflow: hidden;/*藏起溢出的3/4圆,也藏起溢出元素*/
+    }
+    
+    .circle{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color:#fc0;
+    }
+    
+    .c1{
+        position: absolute;
+        top: -50px;
+        left: -50px;
+    }
+    
+    .c2{
+        position: absolute;        
+        bottom: -50px;
+        right: -50px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        灰色块高/宽必须设置固定数值/百分比<br>
+        否则自动占满<br>   
+        .【绝对定位】居中灰块{<br>
+        position:absolute;<br>
+        top:0;
+        right:0;        
+        left:0;
+        bottom:0;<br>
+        margin:auto;<br>
+        }
+        <br>
+        首先大家需要先学习HTML/CSS的入门练习，即我们的“小薇学院”。可以从任务一做到任务九，最后几个任务可以根据自己的兴趣、时间来决定是否学习        
+    </div>
+</body>
+
+</html>

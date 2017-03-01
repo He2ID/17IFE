@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务四：定位和居中问题</title>
+		<style>
+		.center{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);  
+     		-ms-transform: translate(-50%,-50%);  
+          	transform: translate(-50%,-50%);/*高自适应也能居中啦！*/
+			width: 40%;
+			padding: 50px;
+			background-color: #ccc;
+		}
+		.circle{
+			width: 50px;
+			height: 50px;
+			background-color:#fc0;
+		}
+		.c1{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			border-radius: 0px 0px 50px 0px;/*从左上角1/4画圆弧，顺时针方向*/
+		}
+		.c2{
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			border-radius: 50px 0px 0px 0px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="center">
+		<div class="circle c1"></div>
+		<div class="circle c2"></div>
+		灰色块高度自适应<br>
+		.居中灰块{<br>
+		position:absolute;<br>
+		top:50%;left:50%;<br>
+		transform: translate(-50%,-50%);<br>
+		-webkit-transform: translate(-50%,-50%);<br> 
+     	-ms-transform: translate(-50%,-50%);<br>
+		}<br>
+		首先大家需要先学习HTML/CSS的入门练习，即我们的“小薇学院”。可以从任务一做到任务九，最后几个任务可以根据自己的兴趣、时间来决定是否学习
+	</div>
+</body>
+</html>
