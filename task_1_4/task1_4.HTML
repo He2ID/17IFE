@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务四：定位和居中问题</title>
+		<style>
+		html,body{
+            width: 100%;
+            height: 100%;
+            /*务必设置为浏览器高度的100%，否则body高度由center决定，center无法相对于父元素定位*/
+			margin: 0;
+			padding: 0;			
+		}
+		.center{
+			position: relative;
+			top:50%;
+			left: 50%;
+			margin: -100px -200px;			
+			width: 300px;
+			height: 100px;
+			padding: 50px;
+			background-color: #ccc;
+		}
+		.circle{
+			width: 50px;
+			height: 50px;
+			background-color:#fc0;
+		}
+		.c1{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			border-radius: 0px 0px 50px 0px;
+		}
+		.c2{
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			border-radius: 50px 0px 0px 0px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="center">
+		<div class="circle c1"></div>
+		<div class="circle c2"></div>
+		灰色块高/宽固定(200px*400px)<br>
+		.居中灰块{<br>
+		position:relative;<br>
+		top:50%;left:50%;<br>
+		margin:-0.5块高 -0.5块宽;<br>
+		}
+	</div>
+</body>
+</html>
