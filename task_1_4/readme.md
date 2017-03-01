@@ -1,14 +1,14 @@
-#小微学院任务四
-  
-原任务居中在线预览：https://He2ID.github.io/17IFE/task_1_4/task1_4.HTML  
-【绝对定位】居中在线预览：https://He2ID.github.io/17IFE/task_1_4/task1_4_1.HTML  
-灰色块高度是根据内容动态变化的情况下居中在线预览：https://He2ID.github.io/17IFE/task_1_4/task1_4_2.HTML
-  
+#小微学院任务四  
+
+*   原任务居中在线预览：https://He2ID.github.io/17IFE/task_1_4/task1_4.HTML
+*   【绝对定位】居中在线预览：https://He2ID.github.io/17IFE/task_1_4/task1_4_1.HTML
+*   灰色块高度是根据内容动态变化的情况下居中在线预览：https://He2ID.github.io/17IFE/task_1_4/task1_4_2.HTML
+  
 ###NOTE
 ####画圆
 with=height=border-radius  
 ####实现居中  
-1.居中元素高宽已知时：  
+*   1.居中元素高宽已知时：  
  .居中灰块{<br>
     position:relative;<br>
     top:50%;left:50%;<br>
@@ -23,7 +23,7 @@ with=height=border-radius  
    bottom:0;<br>
    margin:auto;<br>
    }  
-2.居中元素要求高度自适应时：  
+*   2.居中元素要求高度自适应时：  
   .居中灰块{<br>
     position:absolute;<br>
     top:50%;left:50%;<br>
@@ -31,7 +31,8 @@ with=height=border-radius  
     -webkit-transform: translate(-50%,-50%);<br> 
     -ms-transform: translate(-50%,-50%);<br>
     }<br>  
+
 ####相对定位
-1.当c元素设置为position：relative top:30%百分比时，一定考察父元素高度是否确定。  
-2.父元素无论是position：relative 还是 absolute 子元素设置position：absolute 均可使得子元素左上角相对父元素边沿定位。
-3.top:50%+20px是行不通的。
+*   当c元素设置为position：relative top:30%百分比时，一定考察父元素高度是否确定。
+*   父元素无论是position：relative 还是 absolute 子元素设置position：absolute 均可使得子元素左上角相对父元素边沿定位。
+*   top:50%+20px是行不通的。
