@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务十：Flexbox 布局练习</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.flex-container{
+			display: flex;
+			flex-flow: row;/*单行从左到右横向显示*/
+			justify-content: space-between;/*横向间隔铺满，左右不留空*/
+			align-items: center;/*纵向最高的中线居中*/
+			padding: 20px 20px 0px;
+			border: 1px solid #ccc;
+		}
+		.flex-item{
+			width: 150px;
+			margin-bottom: 20px;
+		}
+		.item1{
+			height: 120px;
+			border: 1px #f00 solid;
+		}
+		.item2{
+			height: 100px;
+			border: 1px #f00 solid;
+		}	
+		.item3{
+			height: 40px;
+			border: 1px #f00 solid;
+		}	
+		.item4{
+			height: 200px;
+			border: 1px #0000FA solid;
+		}				
+		@media screen and (max-width: 640px){
+		.flex-container{
+			display: flex;
+			flex-flow: row wrap;/*多行*/
+			align-items: flex-start;/*项目垂直顶端对齐*/
+		}
+		.item4{
+			order: -1;/*项目序号排到0前面去*/
+		}						
+					}			
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div class="flex-item item1"></div>
+		<div class="flex-item item2"></div>
+		<div class="flex-item item3"></div>
+		<div class="flex-item item4"></div>
+	</div>
+</body>
+</html>
